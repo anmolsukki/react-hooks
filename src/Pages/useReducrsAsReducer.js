@@ -20,7 +20,7 @@ const reducer = (state, action) => {
     }
 }
 
-const useReducrs1 = () => {
+const useReducrsAsReducer = () => {
     const [count, dispatch] = useReducer(reducer, initialState)
     return (
         <div>
@@ -37,4 +37,4 @@ const useReducrs1 = () => {
     )
 }
 
-export default useReducrs1
+export default useReducrsAsReducer
