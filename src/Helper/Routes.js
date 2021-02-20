@@ -1,5 +1,8 @@
 import React from 'react';
 import { Route, Switch, withRouter } from 'react-router-dom';
+import CustomHookForm from '../Pages/CustomHookForm';
+import CustomHooksSetTitle from '../Pages/CustomHooksSetTitle';
+import CustomHookUseCounter from '../Pages/CustomHookUseCounter';
 import IntervalHookCounter from '../Pages/IntervalHookCounter';
 import prevState from '../Pages/PrevState';
 import useCallbacks from '../Pages/useCallbacks';
@@ -28,6 +31,9 @@ const Routes = () => {
         <Route exact path="/usememos" component={UseMemosFile} />
         <Route exact path="/useRefInputRef" component={UseRefInputRef} />
         <Route exact path="/UseRefookTimer" component={UseRefookTimer} />
+        <Route exact path="/customHooksSetTitle" component={CustomHooksSetTitle} />
+        <Route exact path="/CustomHookUseCounter" component={CustomHookUseCounter} />
+        <Route exact path="/customHookForm" component={CustomHookForm} />
       </Switch>
   );
 };
